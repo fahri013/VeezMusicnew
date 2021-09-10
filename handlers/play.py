@@ -377,7 +377,7 @@ async def m_cb(b, cb):
                 
                 ],
                 [       
-                    InlineKeyboardButton("🗑 Close", "cls")
+                    InlineKeyboardButton("🗑 Tutup", "cls")
                 ]        
             ]
         )
@@ -413,7 +413,7 @@ async def m_cb(b, cb):
                 pass
 
             callsmusic.pytgcalls.leave_group_call(chet_id)
-            await cb.message.edit("⏹ **music stopped!**")
+            await cb.message.edit("⏹ **capek gua!**")
         else:
             await cb.answer("assistant is not connected to voice chat!", show_alert=True)
 
@@ -509,10 +509,14 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
+                    InlineKeyboardButton("🖱 𝐌𝐞𝐧𝐮", callback_data="menu"),
+                    InlineKeyboardButton("😎 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 😎", url="https://t.me/tummingrockers"),
                 ],[
-                    InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}")
+                    InlineKeyboardButton("👥 𝐆𝐫𝐮𝐩 𝐤𝐮 👥", url=f"https://t.me/{GROUP_SUPPORT}"), 
+                    InlineKeyboardButton("📣 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 📣", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                    InlineKeyboardButton("📷 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 📷", url="https://instagram.com/aldasulaimann?utm_medium=copy_link"), 
+                ],[
+                    InlineKeyboardButton("🗑 Tutup", callback_data="cls"),
                 ],
             ]
         )
@@ -556,10 +560,14 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
+                    InlineKeyboardButton("🖱 𝐌𝐞𝐧𝐮", callback_data="menu"),
+                    InlineKeyboardButton("😎 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 😎", url="https://t.me/tummingrockers"),
                 ],[
-                    InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}")
+                    InlineKeyboardButton("👥 𝐆𝐫𝐮𝐩 𝐤𝐮 👥", url=f"https://t.me/{GROUP_SUPPORT}"), 
+                    InlineKeyboardButton("📣 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 📣", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                    InlineKeyboardButton("📷 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 📷", url="https://instagram.com/aldasulaimann?utm_medium=copy_link"), 
+                ],[
+                    InlineKeyboardButton("🗑 Tutup", callback_data="cls"),
                 ],
             ]
         )
@@ -579,14 +587,14 @@ async def play(_, message: Message):
           await lel.edit("**please give a song name you want to play !**")
         # veez project
         try:
-            toxxt = "⚡ __choose a song to play:__\n\n"
+            toxxt = "⚡ __JANGAN REQUEST LAGU YG ANEH TELASSO:__\n\n"
             j = 0
             useer=user_name
             emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣"]
             while j < 6:
                 toxxt += f"{emojilist[j]} [{results[j]['title'][:30]}](https://youtube.com{results[j]['url_suffix']})\n"
-                toxxt += f" ├ 💡 **Duration** - {results[j]['duration']}\n"
-                toxxt += f" └ ⚡ __Powered by {BOT_NAME} A.I__\n\n"
+                toxxt += f" ├ 💡 **Durasi** - {results[j]['duration']}\n"
+                toxxt += f" └ ⚡ __Powered by {BOT_NAME}__\n\n"
                 j += 1            
             keyboard = InlineKeyboardMarkup(
                 [
@@ -602,7 +610,7 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton("6️⃣", callback_data=f'plll 5|{query}|{user_id}'),
                     ],
-                    [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                    [InlineKeyboardButton(text="🗑 Tutup", callback_data="cls")],
                 ]
             )
             await message.reply_photo(
@@ -640,10 +648,14 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
+                   InlineKeyboardButton("🖱 𝐌𝐞𝐧𝐮", callback_data="menu"),
+                   InlineKeyboardButton("😎 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 😎", url="https://t.me/tummingrockers"),
                 ],[
-                    InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}")
+                   InlineKeyboardButton("👥 𝐆𝐫𝐮𝐩 𝐤𝐮 👥", url=f"https://t.me/{GROUP_SUPPORT}")
+                   InlineKeyboardButton("📣 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 📣", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                   InlineKeyboardButton("📷 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 📷", url="https://instagram.com/aldasulaimann?utm_medium=copy_link"), 
+                ],[
+                   InlineKeyboardButton("🗑 Tutup", callback_data="cls"),
                 ],
             ]
             )
@@ -681,8 +693,8 @@ async def play(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption=f"🏷 **Name:** [{title[:45]}]({url})\n⏱ **Duration:** `{duration}`\n💡 **Status:** `Playing`\n" \
-                   +f"🎧 **Request by:** {message.from_user.mention}",
+            caption=f"🏷 **Judul:** [{title[:45]}]({url})\n⏱ **Durasi:** `{duration}`\n💡 **Status:** `Terputar`\n" \
+                   +f"🎧 **Permintaan dari jamet** {message.from_user.mention}",
             reply_markup=keyboard
         )
         os.remove("final.png")
@@ -698,13 +710,13 @@ async def lol_cb(b, cb):
     try:
         x,query,useer_id = typed_.split("|")      
     except:
-        await cb.message.edit("❌ song not found")
+        await cb.message.edit("❌ Lagu tidak ditemukan")
         return
     useer_id = int(useer_id)
     if cb.from_user.id != useer_id:
         await cb.answer("you are not people who requested this song !", show_alert=True)
         return
-    #await cb.message.edit("🔁 **processing...**")
+    #await cb.message.edit("🔁 **sabarkii boss...**")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -722,7 +734,8 @@ async def lol_cb(b, cb):
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-      Bujet `{DURATION_LIMIT}` menit tidak dapat diputar.")
+        if (dur / 60) > DURATION_LIMIT:
+             await cb.message.edit(f"❌ Bujet lagu yg lu minta lebih dari `{DURATION_LIMIT}`,rakus banget luu hahaha.")
              return
     except:
         pass
@@ -746,7 +759,7 @@ async def lol_cb(b, cb):
                     InlineKeyboardButton("📷 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 📷", url="https://instagram.com/aldasulaimann?utm_medium=copy_link"), 
                 ],[
                     InlineKeyboardButton("🗑 Tutup", callback_data="cls"),
-                ]
+                ], 
             ]
     )
     requested_by = useer_name
