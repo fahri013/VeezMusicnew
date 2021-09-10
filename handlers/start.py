@@ -32,12 +32,14 @@ async def _human_time_duration(seconds):
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>✨ **Welcome {message.from_user.first_name}** \n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) Disini lu bisa memutar musik sesuka lu TOLOL!!**
+        f"""<b>✨ **Halooo **{message.from_user.first_name}** Telaso** \n
+💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) Bot ini dapat memutar musik di obrolan suara di gc lu, !!**
 
-💡 **𝗙𝗶𝗻𝗱 𝗼𝘂𝘁 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗕𝗼𝘁'𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗮𝗻𝗱 𝗵𝗼𝘄 𝘁𝗵𝗲𝘆 𝘄𝗼𝗿𝗸 𝗯𝘆 𝗰𝗹𝗶𝗰𝗸𝗶𝗻𝗴 𝗼𝗻 𝘁𝗵𝗲 » 📚 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗯𝘂𝘁𝘁𝗼𝗻 !**
+💡 **Cari perintah apa aja yg ada dalam bot di » PERINTAH!**
 
-❓ **𝗙𝗼𝗿 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗮𝗯𝗼𝘂𝘁 𝗮𝗹𝗹 𝗳𝗲𝗮𝘁𝘂𝗿𝗲 𝗼𝗳 𝘁𝗵𝗶𝘀 𝗯𝗼𝘁, 𝗷𝘂𝘀𝘁 𝘁𝘆𝗽𝗲 /help**
+❓ **Bila ketololan lu muncul lu ketik aja /help**
+
+🔔 **Perhatian, lu {message.from_user.first_name} klo dikasi gratis jgn mengeluh bego, klo lagu lu proses terus, berarti udah dri sananya error!**
 </b>""",
         reply_markup=InlineKeyboardMarkup(
             [ 
@@ -52,19 +54,19 @@ async def start_(client: Client, message: Message):
                          "📚 Perintah", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "💝 Donasi kuy", url=f"https://t.me/{OWNER_NAME}")
+                        "🤗Donasinya om/tante🤗", url=f"https://t.me/{OWNER_NAME}")
                 ],[
                     InlineKeyboardButton(
-                        "👥 Join Grup Gua", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥Join Grup Gua👥", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
+                        "📣Official Channel📣", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
                     InlineKeyboardButton(
-                        "🌐 Wiki's Page", url="https://github.com/levina-lab/veezmusic/wiki/Veez-Music-Wiki's")
+                        "💕Terima Kasih Buat💕", url="https://t.me/tummingrockers")
                 ],[
                     InlineKeyboardButton(
-                        "🧪 Source Code 🧪", url="https://github.com/levina-lab/VeezMusic"
+                        "🤤ASUPAN🤤", url="https://xnxx.com"
                     )
                 ]
             ]
