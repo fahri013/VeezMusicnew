@@ -54,7 +54,7 @@ async def start_(client: Client, message: Message):
                          "📚 Perintah", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "🤗Donasinya om/tante🤗", url=f"https://t.me/{OWNER_NAME}")
+                        "🤗Donasinya om/tante🤗", url="https://t.me/tummingrockers")
                 ],[
                     InlineKeyboardButton(
                         "👥Join Grup Gua👥", url=f"https://t.me/{GROUP_SUPPORT}"
@@ -81,15 +81,15 @@ async def start(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        f"""✅ **bot is running**\n<b>💠 **uptime:**</b> `{uptime}`""",
+        f"""✅ **bot sedang berjalan**\n<b>💠 **berjalan:**</b> `{uptime}`""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "✨ Grupku", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 Channelku", url=f"https://t.me/{UPDATES_CHANNEL}"
                     )
                 ]
             ]
@@ -99,7 +99,7 @@ async def start(client: Client, message: Message):
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>👋🏻 **Hello** {message.from_user.mention()}</b>
+        f"""<b>👋🏻 **Haiii** {message.from_user.mention()} telaso</b>
 
 **Please press the button below to read the explanation and see the list of available commands !**
 
@@ -175,6 +175,6 @@ async def get_uptime(client: Client, message: Message):
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
         "🤖 bot status:\n"
-        f"• **uptime:** `{uptime}`\n"
-        f"• **start time:** `{START_TIME_ISO}`"
+        f"• **berjalan:** `{uptime}`\n"
+        f"• **dimulai sejak:** `{START_TIME_ISO}`"
     )
